@@ -1,0 +1,112 @@
+/* General */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+section {
+  margin-bottom: 40px;
+}
+
+/* Ejercicio 1: Modelo de Caja */
+.content-box, .border-box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+  display: inline-block;
+  background-color: lightblue;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: lightgreen;
+}
+
+/* Ejercicio 2: Posicionamiento */
+.posicion {
+  width: 100px;
+  height: 100px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.static {
+  background-color: gray;
+  position: static; /* Por defecto */
+}
+
+.relative {
+  background-color: blue;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.absolute {
+  background-color: red;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
+
+.fixed {
+  background-color: green;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+/* Ejercicio 3: Display */
+.inline {
+  display: inline;
+  background-color: lightcoral;
+  padding: 5px;
+  margin: 5px;
+  /* Se comporta como texto, no respeta ancho ni alto */
+}
+
+.block {
+  display: block;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+  /* Ocupa todo el ancho disponible */
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: lightyellow;
+  padding: 10px;
+  margin: 10px;
+  /* Se comporta como inline pero permite ancho/alto */
+}
+
+.ocultar {
+  background-color: pink;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+.ocultar:hover + .oculto {
+  display: block;
+  background-color: gold;
+  padding: 10px;
+}
+
+/* Ejercicio 4: Google Fonts */
+.google-font {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
